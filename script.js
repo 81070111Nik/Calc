@@ -11,7 +11,7 @@ out = document.querySelector('#out');
 range.onchange = function(){
     document.querySelector('.distance').textContent = range.value;
 }
-povtor = function(){
+calc = function(){
     if(load.checked){
         load.value = 300;
     }else{
@@ -36,7 +36,7 @@ btn.onclick = function(){
     }else  if(weight.value !="" && vol.value ===""){
         alert('Укажите объем');
     }else if(weight.value !="" && vol.value !=""){
-        povtor();
+        calc();
     }else{
         alert('Укажите вес и объем');
     }
